@@ -1,4 +1,3 @@
-import { Home } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import { Route } from "react-router";
 import { Routes } from "react-router-dom";
@@ -7,6 +6,7 @@ import Contact from "./Screen/Contact/Contact";
 import About from "./Screen/About/About";
 import Skill from "./Screen/Skill/Skill";
 import Project from "./Screen/Project/Project";
+import Home from "./Screen/Home/Home";
 
 function App() {
   return (

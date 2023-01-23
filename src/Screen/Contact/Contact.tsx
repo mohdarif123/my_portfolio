@@ -6,26 +6,24 @@ function Contact() {
   const classes = contactStyle;
   return (
     <Box sx={classes.mainWrapper}>
-      <Grid container xs={12} justifyContent="center" mt={3}>
-        <Grid item sm={12} xs={12} md={9} lg={8} xl={7} justifyContent="center">
-          <Typography variant="h2" textAlign="center">
+      <Grid container justifyContent={"center"}>
+        <Grid item>
+          <Typography variant="h2" textAlign="center" alignItems="center">
             Contact us
           </Typography>
         </Grid>
       </Grid>
-      
+
       <Grid
         container
-        spacing={4}
+        // spacing={4}
         sm={12}
         xs={12}
         md={9}
         lg={8}
         xl={12}
-        mt={10}
+        display="flex"
         justifyContent="center"
-        alignItems={"center"}
-        // style={{ maxHeight: "50vh" }}
       >
         <Grid item sm={12} xs={12} md={9} lg={8} xl={7}>
           <CustomInput

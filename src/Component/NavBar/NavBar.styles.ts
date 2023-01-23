@@ -3,9 +3,14 @@ const NavBarPageStyle = {
   navWrapperStyle: {
     display: "flex",
     backgroundColor: "#1b2430",
+    alignItems  : "center",
     justifyContent: "space-between",
-    padding: "20px 80px",
+    height : "80px",
     boxShadow: "0 5px 15px rgba(0,0,0,0,0.6)",
+    position: "fixed",
+    top: "0",
+    width: "100%",
+    padding  :"0 20px"
   },
   NavBarStyle: {
     display: "flex",
@@ -18,7 +23,7 @@ const NavBarPageStyle = {
       alignItem: "flex-start",
       justifyContent: "flex-start",
       position: "fixed",
-      top: "100px",
+      top: "80px",
       right: "-310px",
       width: "300px",
       height: "100vh",
@@ -38,7 +43,7 @@ const NavBarPageStyle = {
       alignItem: "flex-start",
       justifyContent: "flex-start",
       position: "fixed",
-      top: "100px",
+      top: "80px",
       right: "0px",
       width: "300px",
       height: "100vh",

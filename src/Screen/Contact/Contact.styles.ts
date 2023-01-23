@@ -2,7 +2,11 @@ const contactStyle = {
   mainWrapper: {
     width: "100%",
     background: "linear-gradient(to right bottom, #430089, #82ffa1)",
-    // height: "100vh !important",
+    height: "calc(100vh - 72px)",
+    display :"flex",
+    alignItems : "center",
+    justifyContent : "center",
+    flexDirection : "column"
   },
   descriptionStyle: {
     width: "100%",
