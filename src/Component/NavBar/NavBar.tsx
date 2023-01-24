@@ -17,7 +17,7 @@ const NavBar = () => {
     setClicked(true);
   };
   const handleHome = () => {
-     navigate("/");
+    navigate("/");
   };
   const handleAbout = () => {
     navigate('/about');
@@ -26,7 +26,7 @@ const NavBar = () => {
   const handleSkill = ()=>{
     navigate('/skill');
   }
-  const handleProjectt = ()=>{
+  const handleProject = ()=>{
     navigate('/project');
   }
   const handleContactUs = ()=>{
@@ -49,7 +49,7 @@ const NavBar = () => {
             <ListItem sx={classes.listItemStyle} onClick={handleHome}>Home</ListItem>
             <ListItem sx={classes.listItemStyle} onClick={handleAbout}>About</ListItem>
             <ListItem sx={classes.listItemStyle} onClick={handleSkill}> Skill </ListItem>
-            <ListItem sx={classes.listItemStyle} onClick={handleProjectt}> Project </ListItem>
+            <ListItem sx={classes.listItemStyle} onClick={handleProject}> Project </ListItem>
             <ListItem sx={classes.listItemStyle} onClick={handleContactUs}> Contact us </ListItem>
           </List>
         </Box>

@@ -1,10 +1,8 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
 import homeStyle from "./Home.styles";
 import arif from "../../assests/image/arif.jpg";
-import clsx from "clsx";
 import Contact from "../Contact/Contact";
-import Footer from "../../Component/Footer/Footer";
+import Project from "../Project/Project";
 
 const Home = () => {
   const classes = homeStyle;
@@ -21,7 +19,7 @@ const Home = () => {
         justifyContent={"space-evenly"}
 
       >
-        <Grid item>
+        <Grid item lg={6} md={6}>
           <Box style={{ marginTop: "40%" }}>
             <Typography variant="h3">Mohd Arif</Typography>
             <Typography variant="h4" mt={3}>
@@ -34,14 +32,14 @@ const Home = () => {
           </Box>
         </Grid>
 
-        <Grid item>
+        <Grid item lg={6} md={6}>
           <Box>
             <img src={arif} alt="Arif_Image" />
           </Box>
         </Grid>
       </Grid>
       <Contact />
-      {/* <Footer /> */}
+      <Project />
     </Box>
   );
 };

@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
-import projectSyle from "./Project.styles";
+import projectSytle from "./Project.styles";
 
 const Project = () => {
-  const classes = projectSyle;
+  const classes = projectSytle;
   return (
     <Box>
       <Typography>Project</Typography>
