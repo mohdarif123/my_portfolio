@@ -18,19 +18,24 @@ const NavBar = () => {
   };
   const handleHome = () => {
     navigate("/");
+    setClicked(true);
   };
   const handleAbout = () => {
     navigate('/about');
+    setClicked(true);
   };
 
   const handleSkill = ()=>{
     navigate('/skill');
+    setClicked(true);
   }
   const handleProject = ()=>{
     navigate('/project');
+   setClicked(true);
   }
   const handleContactUs = ()=>{
     navigate('/contact_us');
+    setClicked(true);
   }
 
   return (

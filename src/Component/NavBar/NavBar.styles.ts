@@ -1,16 +1,18 @@
+import zIndex from "@mui/material/styles/zIndex";
 import { theme } from "../../utils/styles";
 const NavBarPageStyle = {
   navWrapperStyle: {
-    display: "flex",
-    backgroundColor: "#1b2430",
-    alignItems  : "center",
-    justifyContent: "space-between",
-    height : "80px",
-    boxShadow: "0 5px 15px rgba(0,0,0,0,0.6)",
-    position: "fixed",
-    top: "0",
-    width: "100%",
-    padding  :"0 20px"
+    display:"flex",
+    backgroundColor:"#1b2430",
+    alignItems:"center",
+    justifyContent:"space-between",
+    height:"80px",
+    boxShadow:"0 5px 15px rgba(0,0,0,0,0.6)",
+    position:"fixed",
+    top:"0",
+    width:"100%",
+    padding:"0 20px",
+    zIndex:"1"
   },
   NavBarStyle: {
     display: "flex",

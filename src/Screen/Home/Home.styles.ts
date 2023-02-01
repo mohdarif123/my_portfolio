@@ -2,6 +2,7 @@ const homeStyle = {
   container: {
     height: "calc(100vh - 80px)",
     marginTop: "80px",
+    backgroundColor:"#D3D3D3"
   },
   mainWrapper: {
     width: "100%",

@@ -17,7 +17,7 @@ function Contact() {
       <>
         <Grid container justifyContent={"center"}>
           <Grid item>
-            <Typography variant="h2">Contact us</Typography>
+            <Typography variant="h3">Contact us</Typography>
           </Grid>
         </Grid>
       </>

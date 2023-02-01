@@ -3,6 +3,7 @@ import homeStyle from "./Home.styles";
 import arif from "../../assests/image/arif.jpg";
 import Contact from "../Contact/Contact";
 import Project from "../Project/Project";
+import Skill from "../Skill/Skill";
 
 const Home = () => {
   const classes = homeStyle;
@@ -38,8 +39,9 @@ const Home = () => {
           </Box>
         </Grid>
       </Grid>
+      <Skill />
       <Contact />
-      <Project />
+      {/* <Project /> */}
     </Box>
   );
 };
