@@ -4,6 +4,7 @@ import arif from "../../assests/image/arif.jpg";
 import Contact from "../Contact/Contact";
 import Project from "../Project/Project";
 import Skill from "../Skill/Skill";
+import Footer from "../../Component/Footer/Footer";
 
 const Home = () => {
   const classes = homeStyle;
@@ -42,6 +43,7 @@ const Home = () => {
       <Skill />
       <Contact />
       {/* <Project /> */}
+      <Footer />
     </Box>
   );
 };

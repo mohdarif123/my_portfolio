@@ -2,19 +2,25 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { skillStyle } from "./Skill.styles";
 import ReactIcon from "../../assests/icon/ReactIcon.png";
+import Javascript from "../../assests/icon/Javascript.png";
+import Html from "../../assests/icon/Html.png";
+import Css from "../../assests/icon/Css.png";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea, CardActions } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 
 const Skill = () => {
   const classes = skillStyle;
   const technologyData = [
-    { technologyIcon: ReactIcon, technologyName: "Html" },
-    { technologyIcon: "", technologyName: "Css" },
-    { technologyIcon: "", technologyName: "Javascript" },
-    { technologyIcon: "", technologyName: "Typescript" },
-    { technologyIcon: "", technologyName: "React js" },
+    { technologyIcon: Html, technologyName: "Html" },
+    { technologyIcon: Css, technologyName: "Css" },
+    { technologyIcon: Javascript, technologyName: "Javascript" },
+    { technologyIcon: ReactIcon, technologyName: "React js" },
+    { technologyIcon: Javascript, technologyName: "Redux" },
+    { technologyIcon: ReactIcon, technologyName: "Typescript" },
+    { technologyIcon: Javascript, technologyName: "Material UI" },
+    { technologyIcon: Javascript, technologyName: "antD UI liberary" },
+    { technologyIcon: Javascript, technologyName: "Tailwind Css" },
   ];
   const getHeader = () => {
     return (
@@ -33,29 +39,35 @@ const Skill = () => {
   const getTechnologySection = () => {
     return (
       <>
-        <Card sx={classes.cardStyle}>
-          <CardActionArea>
-            <img src={ReactIcon} alt="image" />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                React Js
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
+        <Grid container spacing={3}>
+          {technologyData.map((items) => {
+            return (
+              <>
+                <Grid item xl={2} lg={2} md={4} sm={4} xs={4} gap={2}>
+                  <Card sx={classes.cardStyle}>
+                    <CardActionArea sx={classes.cardStyleInner}>
+                      <Box>
+                        <img src={items.technologyIcon} alt="React Icon" width="100" height="100"/>
+                      </Box>
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          {items.technologyName}
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+              </>
+            );
+          })}
+        </Grid>
       </>
     );
   };
   return (
-    <Box sx={classes.mainWrapper} mt={7}>
-      <Grid container xl={12} lg={12} md={12} sm={12} xs={12}>
-        <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
-          {getHeader()}
-        </Grid>
-        <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
-          {getTechnologySection()}
-        </Grid>
-      </Grid>
+    <Box sx={classes.mainWrapper}>
+      <Box>{getHeader()}</Box>
+      <Box style={{marginTop:"56px"}}>{getTechnologySection()}</Box>
     </Box>
   );
 };
