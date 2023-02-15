@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, ThemeProvider } from "@mui/material";
 import { Route } from "react-router";
 import { Routes } from "react-router-dom";
 import NavBar from "./Component/NavBar/NavBar";
@@ -7,9 +7,11 @@ import About from "./Screen/About/About";
 import Skill from "./Screen/Skill/Skill";
 import Project from "./Screen/Project/Project";
 import Home from "./Screen/Home/Home";
+import { themes } from "./utils/styles";
 
 function App() {
   return (
+    <ThemeProvider theme={themes}>
     <Box>
       <NavBar />
       <Routes>
@@ -20,6 +22,7 @@ function App() {
         <Route path="/contact_us" element={<Contact />} />
       </Routes>
     </Box>
+    </ThemeProvider>
   );
 }
 
