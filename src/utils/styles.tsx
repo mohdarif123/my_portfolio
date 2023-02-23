@@ -24,16 +24,16 @@ export const breakpoints: any = {
 };
 const themes = createTheme({
   // breakpoints,
-  typography: {
-    ...customTypography,
-    // overrides: {
-    //   MuiCssBaseline: {
-    //     "@global": {
-    //       "@font-face": [raleway],
-    //     },
-    //   },
-    // },
-  },
+  // typography: {
+  //   ...customTypography,
+  //   // overrides: {
+  //   //   MuiCssBaseline: {
+  //   //     "@global": {
+  //   //       "@font-face": [raleway],
+  //   //     },
+  //   //   },
+  //   // },
+  // },
 });
 const customTypography = {
   typography: {
