@@ -8,14 +8,14 @@ const Footer = ()=> {
         <>
           <Grid container justifyContent={"center"}>
             <Grid item>
-              <Typography variant="h3">Contact us</Typography>
+              <Typography variant="h1">Footer</Typography>
             </Grid>
           </Grid>
         </>
       );
     };
   return (
-   <Box>
+   <Box sx={classes.mainWrapper}>
     {getHeader()}
    </Box>
   )

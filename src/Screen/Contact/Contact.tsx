@@ -41,7 +41,7 @@ function Contact() {
       <>
         <Grid container justifyContent={"center"}>
           <Grid item>
-            <Typography variant="h1">Contact us</Typography>
+            <Typography variant="h1" sx={classes.headingStyle}>Contact us</Typography>
           </Grid>
         </Grid>
       </>
