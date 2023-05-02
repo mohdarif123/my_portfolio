@@ -1,7 +1,9 @@
+import { primaryBlack } from "../../utils/styles";
+
 const footerStyle = {
   mainWrapper: {
-    height: "30%",
-    background:"red"
+    height: "40vh",
+    background:"brown",
   },
 } as const;
 

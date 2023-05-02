@@ -3,7 +3,8 @@ import { constants } from "buffer";
 import strings from "../global/constants/StringConstants";
 
 // constants color 
-const primaryColor = "#FFFFFF";
+const primaryWhite = "#FFFFFF";
+const primaryBlack = "#000";
 
 const theme = createTheme({
   typography: {
@@ -337,4 +338,4 @@ const themes = createTheme({
   },
 });
 
-export { theme, themes };
+export { theme, themes ,primaryBlack};

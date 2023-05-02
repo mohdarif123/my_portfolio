@@ -11,6 +11,9 @@ const contactStyle = {
     justifyContent: "center",
     flexDirection: "column",
   },
+  errorStyling: {
+    paddingLeft: "10px",
+  },
   buttonStyle: {
     background: "black",
     color: "white",

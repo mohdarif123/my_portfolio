@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, FormHelperText, Grid, Typography } from "@mui/material";
 import CustomInput from "../../global/CustomInput/CustomInput";
 import contactStyle from "./Contact.styles";
 import { useState } from "react";
@@ -12,8 +12,9 @@ function Contact() {
   const [contactFormData, setContactFormData] = useState<any>(
     contactFormInitialState
   );
-// email regex 
-  const emailRegex =/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+  // email regex
+  const emailRegex =
+    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
   const handleOnchangeMethod = (event: any) => {
     setContactFormData({
@@ -21,7 +22,7 @@ function Contact() {
       [event.target.name]: {
         ...contactFormData[event.target.name],
         value: event.target.value,
-        error:""
+        error: "",
       },
     });
   };
@@ -41,7 +42,9 @@ function Contact() {
       <>
         <Grid container justifyContent={"center"}>
           <Grid item>
-            <Typography variant="h1" sx={classes.headingStyle}>Contact us</Typography>
+            <Typography variant="h1" sx={classes.headingStyle}>
+              Contact us
+            </Typography>
           </Grid>
         </Grid>
       </>
@@ -101,6 +104,12 @@ function Contact() {
               error={contactFormData.email.error}
               helperText={contactFormData.email.error}
             />
+            {!emailRegex.test(contactFormData.email.value) &&
+              contactFormData.email.value.length > 0 && (
+                <FormHelperText error sx={classes.errorStyling}>
+                  Please enter valid email id!
+                </FormHelperText>
+              )}
           </Grid>
           <Grid item sm={12} xs={12} md={9} lg={8} xl={7}>
             <CustomInput

@@ -1,3 +1,5 @@
+import strings from "../../global/constants/StringConstants";
+
 export const contactFormInitialState = () => {
   return {
     name: {
@@ -56,6 +58,10 @@ export const validateForContactForm = (contactFormData: any) => {
 
   if (!email) {
     errors!.email.error = "Please enter email!";
+    isValid = false;
+  }
+  if(strings.regex.test(email)){
+    errors!.email.error = "Please enter valid email!";
     isValid = false;
   }
   if (!description) {

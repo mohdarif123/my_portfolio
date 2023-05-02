@@ -10,39 +10,43 @@ const Home = () => {
   const classes = homeStyle;
 
   return (
-    <Box sx={classes.container}>
+    <>
+      <Box sx={classes.container}>
+        <Grid
+          container
+          sm={12}
+          xs={12}
+          md={12}
+          lg={12}
+          xl={12}
+          justifyContent={"space-evenly"}
+        >
+          <Grid item lg={8} md={8}>
+            <Box style={{ marginTop: "40%" }}>
+              <Typography variant="h3">Mohd Arif</Typography>
+              <Typography variant="h4" mt={3}>
+                ____Software Engineer
+              </Typography>
+              <Typography mt={4} variant="h5">
+                I'm creative web developer in India, and I'm passionate and
+                dedicated to my work
+              </Typography>
+            </Box>
+          </Grid>
 
-
-      <Grid container sm={12} xs={12} md={12} lg={12} xl={12} justifyContent={"space-evenly"}>
-
-        <Grid item lg={8} md={8}>
-          <Box style={{ marginTop: "40%" }}>
-            <Typography variant="h3">Mohd Arif</Typography>
-            <Typography variant="h4" mt={3}>
-              ____Software Engineer
-            </Typography>
-            <Typography mt={4} variant="h5">
-              I'm creative web developer in India, and I'm passionate and
-              dedicated to my work
-            </Typography>
-          </Box>
+          <Grid item lg={3} md={3}>
+            <Box>
+              <img src={arifPhoto} alt="Arif_Image" />
+            </Box>
+          </Grid>
         </Grid>
 
-
-        <Grid item lg={3} md={3}>
-          <Box>
-            <img src={arifPhoto} alt="Arif_Image" />
-          </Box>
-        </Grid>
-
-      </Grid>
-
-
+        {/* <Project /> */}
+      </Box>
       <Skill />
       <Contact />
-      {/* <Project /> */}
       <Footer />
-    </Box>
+    </>
   );
 };
 
