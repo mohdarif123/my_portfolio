@@ -2,17 +2,17 @@ import zIndex from "@mui/material/styles/zIndex";
 import { theme } from "../../utils/styles";
 const NavBarPageStyle = {
   navWrapperStyle: {
-    display:"flex",
-    backgroundColor:"#1b2430",
-    alignItems:"center",
-    justifyContent:"space-between",
-    height:"80px",
-    boxShadow:"0 5px 15px rgba(0,0,0,0,0.6)",
-    position:"fixed",
-    top:"0",
-    width:"100%",
-    padding:"0 20px",
-    zIndex:"1"
+    display: "flex",
+    backgroundColor: "#1b2430",
+    alignItems: "center",
+    justifyContent: "space-between",
+    height: "80px",
+    boxShadow: "0 5px 15px rgba(0,0,0,0,0.6)",
+    position: "fixed",
+    top: "0",
+    width: "100%",
+    padding: "0 20px",
+    zIndex: "1",
   },
   NavBarStyle: {
     display: "flex",
@@ -57,9 +57,9 @@ const NavBarPageStyle = {
   listItemStyle: {
     color: "#ffffff",
     width: "150px",
-    fontFamily: "SourceSans3_Regular",
     fontWeight: 700,
     display: "list-item",
+    underline: "none",
     fontSize: "1.3rem",
     padding: "0 20px",
     position: "relative",
@@ -81,7 +81,13 @@ const NavBarPageStyle = {
       marginBottom: "25px",
     },
   },
-
+  listItemDefaultActive: {
+    cursor: "pointer",
+    margin: "0 1rem",
+    color: "#17cf97",
+    fontWeight: "bold",
+    textDecoration: "underline #17cf97",
+  },
   mobile: {
     display: "none",
     [theme.breakpoints.down("md")]: {

@@ -46,23 +46,23 @@ const customTypography = {
   h1: {
     [`@media screen and (min-width: ${breakpoints.values.xs}px)`]: {
       fontSize: "1.30rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: "Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif",
     },
     [`@media screen and (min-width: ${breakpoints.values.sm}px)`]: {
       fontSize: "1.30rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: "Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif",
     },
     [`@media screen and (min-width: ${breakpoints.values.md}px)`]: {
       fontSize: "1.45rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: "Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif",
     },
     [`@media screen and (min-width: ${breakpoints.values.lg}px)`]: {
       fontSize: "1.50rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: "Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif",
     },
     [`@media screen and (min-width: ${breakpoints.values.xl}px)`]: {
       fontSize: "1.625rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: "Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif",
     },
   },
   // for 22px
@@ -97,23 +97,23 @@ const customTypography = {
   h3: {
     [`@media screen and (min-width: ${breakpoints.values.xs}px)`]: {
       fontSize: "0.938rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: strings.sournceSansFamily,
     },
     [`@media screen and (min-width: ${breakpoints.values.sm}px)`]: {
       fontSize: "0.938rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: strings.sournceSansFamily,
     },
     [`@media screen and (min-width: ${breakpoints.values.md}px)`]: {
       fontSize: "1rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: strings.sournceSansFamily,
     },
     [`@media screen and (min-width: ${breakpoints.values.lg}px)`]: {
       fontSize: "1rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: strings.sournceSansFamily,
     },
     [`@media screen and (min-width: ${breakpoints.values.xl}px)`]: {
       fontSize: "1.063rem",
-      fontFamily: strings.boldFamily,
+      fontFamily: strings.sournceSansFamily,
     },
   },
   // for table row 16px

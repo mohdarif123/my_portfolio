@@ -5,9 +5,21 @@ import Contact from "../Contact/Contact";
 import Project from "../Project/Project";
 import Skill from "../Skill/Skill";
 import Footer from "../../Component/Footer/Footer";
+import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
   const classes = homeStyle;
+
+  const getImportComponent = () => {
+    return (
+      <>
+        <Skill />
+        <Contact />
+        <Testimonial />
+        <Footer />
+      </>
+    );
+  };
 
   return (
     <>
@@ -43,9 +55,7 @@ const Home = () => {
 
         {/* <Project /> */}
       </Box>
-      <Skill />
-      <Contact />
-      <Footer />
+      {getImportComponent()}
     </>
   );
 };
